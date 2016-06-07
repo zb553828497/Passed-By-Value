@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ThreeVc"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="JIc-GY-Rb8">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gge-pb-fc8">
+                    <rect key="frame" x="250" y="275" width="100" height="50"/>
+                    <color key="backgroundColor" red="1" green="0.81710425689999999" blue="0.43160489390000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="LvS-Fw-ZSn"/>
+                        <constraint firstAttribute="height" constant="50" id="wix-cG-I8U"/>
+                    </constraints>
+                    <state key="normal" title="传值"/>
+                </button>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Confidence" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hXA-MW-SnK">
+                    <rect key="frame" x="20" y="205" width="560" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="DGs-wu-a80"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="点击传值，会将Confidence传递给firstValue方法" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HDF-L2-CSL">
+                    <rect key="frame" x="20" y="100" width="560" height="85"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="HDF-L2-CSL" firstAttribute="leading" secondItem="JIc-GY-Rb8" secondAttribute="leading" constant="20" id="10x-wB-3hh"/>
+                <constraint firstItem="Gge-pb-fc8" firstAttribute="centerX" secondItem="JIc-GY-Rb8" secondAttribute="centerX" id="2xI-tn-VeA"/>
+                <constraint firstItem="Gge-pb-fc8" firstAttribute="top" secondItem="hXA-MW-SnK" secondAttribute="bottom" constant="20" id="E8c-e2-Tuj"/>
+                <constraint firstItem="hXA-MW-SnK" firstAttribute="leading" secondItem="JIc-GY-Rb8" secondAttribute="leading" constant="20" id="VYj-Ar-M82"/>
+                <constraint firstAttribute="trailing" secondItem="HDF-L2-CSL" secondAttribute="trailing" constant="20" id="lGw-f9-ir7"/>
+                <constraint firstAttribute="trailing" secondItem="hXA-MW-SnK" secondAttribute="trailing" constant="20" id="mcG-2p-ifq"/>
+                <constraint firstItem="HDF-L2-CSL" firstAttribute="top" secondItem="JIc-GY-Rb8" secondAttribute="top" constant="100" id="pAo-Zf-Xh7"/>
+                <constraint firstItem="hXA-MW-SnK" firstAttribute="top" secondItem="HDF-L2-CSL" secondAttribute="bottom" constant="20" id="tLs-Z3-zEY"/>
+                <constraint firstItem="Gge-pb-fc8" firstAttribute="centerY" secondItem="JIc-GY-Rb8" secondAttribute="centerY" id="uOx-qq-h9U"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

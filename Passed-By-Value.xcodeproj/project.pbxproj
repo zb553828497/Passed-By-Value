@@ -1,0 +1,471 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		77716D7D1D068D7B0036E407 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 77716D7C1D068D7B0036E407 /* main.m */; };
+		77716D801D068D7B0036E407 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 77716D7F1D068D7B0036E407 /* AppDelegate.m */; };
+		77716D861D068D7B0036E407 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77716D841D068D7B0036E407 /* Main.storyboard */; };
+		77716D881D068D7B0036E407 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77716D871D068D7B0036E407 /* Assets.xcassets */; };
+		77716D8B1D068D7B0036E407 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77716D891D068D7B0036E407 /* LaunchScreen.storyboard */; };
+		77716DA31D068F750036E407 /* OneVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 77716DA11D068F750036E407 /* OneVc.m */; };
+		77716DA41D068F750036E407 /* OneVc.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77716DA21D068F750036E407 /* OneVc.xib */; };
+		77716DA81D068F900036E407 /* TwoVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 77716DA61D068F900036E407 /* TwoVc.m */; };
+		77716DA91D068F900036E407 /* TwoVc.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77716DA71D068F900036E407 /* TwoVc.xib */; };
+		77716DAD1D068FA00036E407 /* ThreeVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 77716DAB1D068FA00036E407 /* ThreeVc.m */; };
+		77716DAE1D068FA00036E407 /* ThreeVc.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77716DAC1D068FA00036E407 /* ThreeVc.xib */; };
+		77716DB21D068FB90036E407 /* FourVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 77716DB01D068FB90036E407 /* FourVc.m */; };
+		77716DB31D068FB90036E407 /* FourVc.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77716DB11D068FB90036E407 /* FourVc.xib */; };
+		77716DB71D068FC90036E407 /* FiveVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 77716DB51D068FC90036E407 /* FiveVc.m */; };
+		77716DB81D068FC90036E407 /* FiveVc.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77716DB61D068FC90036E407 /* FiveVc.xib */; };
+		77716DBC1D068FD80036E407 /* SixVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 77716DBA1D068FD80036E407 /* SixVc.m */; };
+		77716DBD1D068FD80036E407 /* SixVc.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77716DBB1D068FD80036E407 /* SixVc.xib */; };
+		77716DC11D068FFA0036E407 /* SevenVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 77716DBF1D068FFA0036E407 /* SevenVc.m */; };
+		77716DC21D068FFA0036E407 /* SevenVc.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77716DC01D068FFA0036E407 /* SevenVc.xib */; };
+		77716DC61D0690120036E407 /* EightVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 77716DC41D0690120036E407 /* EightVc.m */; };
+		77716DC71D0690120036E407 /* EightVc.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77716DC51D0690120036E407 /* EightVc.xib */; };
+		77716DCB1D0690230036E407 /* NineVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 77716DC91D0690230036E407 /* NineVc.m */; };
+		77716DCC1D0690230036E407 /* NineVc.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77716DCA1D0690230036E407 /* NineVc.xib */; };
+		77716DD01D0690370036E407 /* TenVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 77716DCE1D0690370036E407 /* TenVc.m */; };
+		77716DD11D0690370036E407 /* TenVc.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77716DCF1D0690370036E407 /* TenVc.xib */; };
+		77716DD51D06904B0036E407 /* ElevenVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 77716DD31D06904B0036E407 /* ElevenVc.m */; };
+		77716DD61D06904B0036E407 /* ElevenVc.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77716DD41D06904B0036E407 /* ElevenVc.xib */; };
+		77716DDA1D0690600036E407 /* Twelve.m in Sources */ = {isa = PBXBuildFile; fileRef = 77716DD81D0690600036E407 /* Twelve.m */; };
+		77716DDB1D0690600036E407 /* Twelve.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77716DD91D0690600036E407 /* Twelve.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		77716D781D068D7B0036E407 /* Passed-By-Value.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Passed-By-Value.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		77716D7C1D068D7B0036E407 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		77716D7E1D068D7B0036E407 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		77716D7F1D068D7B0036E407 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		77716D851D068D7B0036E407 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		77716D871D068D7B0036E407 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		77716D8A1D068D7B0036E407 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		77716D8C1D068D7B0036E407 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		77716DA01D068F750036E407 /* OneVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OneVc.h; sourceTree = "<group>"; };
+		77716DA11D068F750036E407 /* OneVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OneVc.m; sourceTree = "<group>"; };
+		77716DA21D068F750036E407 /* OneVc.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OneVc.xib; sourceTree = "<group>"; };
+		77716DA51D068F900036E407 /* TwoVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwoVc.h; sourceTree = "<group>"; };
+		77716DA61D068F900036E407 /* TwoVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwoVc.m; sourceTree = "<group>"; };
+		77716DA71D068F900036E407 /* TwoVc.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TwoVc.xib; sourceTree = "<group>"; };
+		77716DAA1D068FA00036E407 /* ThreeVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThreeVc.h; sourceTree = "<group>"; };
+		77716DAB1D068FA00036E407 /* ThreeVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThreeVc.m; sourceTree = "<group>"; };
+		77716DAC1D068FA00036E407 /* ThreeVc.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ThreeVc.xib; sourceTree = "<group>"; };
+		77716DAF1D068FB90036E407 /* FourVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FourVc.h; sourceTree = "<group>"; };
+		77716DB01D068FB90036E407 /* FourVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FourVc.m; sourceTree = "<group>"; };
+		77716DB11D068FB90036E407 /* FourVc.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FourVc.xib; sourceTree = "<group>"; };
+		77716DB41D068FC90036E407 /* FiveVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FiveVc.h; sourceTree = "<group>"; };
+		77716DB51D068FC90036E407 /* FiveVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FiveVc.m; sourceTree = "<group>"; };
+		77716DB61D068FC90036E407 /* FiveVc.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FiveVc.xib; sourceTree = "<group>"; };
+		77716DB91D068FD80036E407 /* SixVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SixVc.h; sourceTree = "<group>"; };
+		77716DBA1D068FD80036E407 /* SixVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SixVc.m; sourceTree = "<group>"; };
+		77716DBB1D068FD80036E407 /* SixVc.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SixVc.xib; sourceTree = "<group>"; };
+		77716DBE1D068FFA0036E407 /* SevenVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SevenVc.h; sourceTree = "<group>"; };
+		77716DBF1D068FFA0036E407 /* SevenVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SevenVc.m; sourceTree = "<group>"; };
+		77716DC01D068FFA0036E407 /* SevenVc.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SevenVc.xib; sourceTree = "<group>"; };
+		77716DC31D0690120036E407 /* EightVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EightVc.h; sourceTree = "<group>"; };
+		77716DC41D0690120036E407 /* EightVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EightVc.m; sourceTree = "<group>"; };
+		77716DC51D0690120036E407 /* EightVc.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EightVc.xib; sourceTree = "<group>"; };
+		77716DC81D0690230036E407 /* NineVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NineVc.h; sourceTree = "<group>"; };
+		77716DC91D0690230036E407 /* NineVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NineVc.m; sourceTree = "<group>"; };
+		77716DCA1D0690230036E407 /* NineVc.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NineVc.xib; sourceTree = "<group>"; };
+		77716DCD1D0690370036E407 /* TenVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TenVc.h; sourceTree = "<group>"; };
+		77716DCE1D0690370036E407 /* TenVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TenVc.m; sourceTree = "<group>"; };
+		77716DCF1D0690370036E407 /* TenVc.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TenVc.xib; sourceTree = "<group>"; };
+		77716DD21D06904B0036E407 /* ElevenVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ElevenVc.h; sourceTree = "<group>"; };
+		77716DD31D06904B0036E407 /* ElevenVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ElevenVc.m; sourceTree = "<group>"; };
+		77716DD41D06904B0036E407 /* ElevenVc.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ElevenVc.xib; sourceTree = "<group>"; };
+		77716DD71D0690600036E407 /* Twelve.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Twelve.h; sourceTree = "<group>"; };
+		77716DD81D0690600036E407 /* Twelve.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Twelve.m; sourceTree = "<group>"; };
+		77716DD91D0690600036E407 /* Twelve.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Twelve.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		77716D751D068D7B0036E407 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		77716D6F1D068D7B0036E407 = {
+			isa = PBXGroup;
+			children = (
+				77716D7A1D068D7B0036E407 /* Passed-By-Value */,
+				77716D791D068D7B0036E407 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		77716D791D068D7B0036E407 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				77716D781D068D7B0036E407 /* Passed-By-Value.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		77716D7A1D068D7B0036E407 /* Passed-By-Value */ = {
+			isa = PBXGroup;
+			children = (
+				77716D7E1D068D7B0036E407 /* AppDelegate.h */,
+				77716D7F1D068D7B0036E407 /* AppDelegate.m */,
+				77716D941D068DDE0036E407 /* 方法传值 */,
+				77716D951D068DDE0036E407 /* 属性传值 */,
+				77716D921D068DDE0036E407 /* 代理传值 */,
+				77716D961D068DDE0036E407 /* 通知传值 */,
+				77716D971D068DE80036E407 /* Block传值 */,
+				77716D931D068DDE0036E407 /* 单例传值 */,
+				77716D841D068D7B0036E407 /* Main.storyboard */,
+				77716D871D068D7B0036E407 /* Assets.xcassets */,
+				77716D891D068D7B0036E407 /* LaunchScreen.storyboard */,
+				77716D8C1D068D7B0036E407 /* Info.plist */,
+				77716D7B1D068D7B0036E407 /* Supporting Files */,
+			);
+			path = "Passed-By-Value";
+			sourceTree = "<group>";
+		};
+		77716D7B1D068D7B0036E407 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				77716D7C1D068D7B0036E407 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		77716D921D068DDE0036E407 /* 代理传值 */ = {
+			isa = PBXGroup;
+			children = (
+				77716DB41D068FC90036E407 /* FiveVc.h */,
+				77716DB51D068FC90036E407 /* FiveVc.m */,
+				77716DB61D068FC90036E407 /* FiveVc.xib */,
+				77716DB91D068FD80036E407 /* SixVc.h */,
+				77716DBA1D068FD80036E407 /* SixVc.m */,
+				77716DBB1D068FD80036E407 /* SixVc.xib */,
+			);
+			path = "代理传值";
+			sourceTree = "<group>";
+		};
+		77716D931D068DDE0036E407 /* 单例传值 */ = {
+			isa = PBXGroup;
+			children = (
+				77716DD21D06904B0036E407 /* ElevenVc.h */,
+				77716DD31D06904B0036E407 /* ElevenVc.m */,
+				77716DD41D06904B0036E407 /* ElevenVc.xib */,
+				77716DD71D0690600036E407 /* Twelve.h */,
+				77716DD81D0690600036E407 /* Twelve.m */,
+				77716DD91D0690600036E407 /* Twelve.xib */,
+			);
+			path = "单例传值";
+			sourceTree = "<group>";
+		};
+		77716D941D068DDE0036E407 /* 方法传值 */ = {
+			isa = PBXGroup;
+			children = (
+				77716DA01D068F750036E407 /* OneVc.h */,
+				77716DA11D068F750036E407 /* OneVc.m */,
+				77716DA21D068F750036E407 /* OneVc.xib */,
+				77716DA51D068F900036E407 /* TwoVc.h */,
+				77716DA61D068F900036E407 /* TwoVc.m */,
+				77716DA71D068F900036E407 /* TwoVc.xib */,
+			);
+			path = "方法传值";
+			sourceTree = "<group>";
+		};
+		77716D951D068DDE0036E407 /* 属性传值 */ = {
+			isa = PBXGroup;
+			children = (
+				77716DAA1D068FA00036E407 /* ThreeVc.h */,
+				77716DAB1D068FA00036E407 /* ThreeVc.m */,
+				77716DAC1D068FA00036E407 /* ThreeVc.xib */,
+				77716DAF1D068FB90036E407 /* FourVc.h */,
+				77716DB01D068FB90036E407 /* FourVc.m */,
+				77716DB11D068FB90036E407 /* FourVc.xib */,
+			);
+			path = "属性传值";
+			sourceTree = "<group>";
+		};
+		77716D961D068DDE0036E407 /* 通知传值 */ = {
+			isa = PBXGroup;
+			children = (
+				77716DBE1D068FFA0036E407 /* SevenVc.h */,
+				77716DBF1D068FFA0036E407 /* SevenVc.m */,
+				77716DC01D068FFA0036E407 /* SevenVc.xib */,
+				77716DC31D0690120036E407 /* EightVc.h */,
+				77716DC41D0690120036E407 /* EightVc.m */,
+				77716DC51D0690120036E407 /* EightVc.xib */,
+			);
+			path = "通知传值";
+			sourceTree = "<group>";
+		};
+		77716D971D068DE80036E407 /* Block传值 */ = {
+			isa = PBXGroup;
+			children = (
+				77716DC81D0690230036E407 /* NineVc.h */,
+				77716DC91D0690230036E407 /* NineVc.m */,
+				77716DCA1D0690230036E407 /* NineVc.xib */,
+				77716DCD1D0690370036E407 /* TenVc.h */,
+				77716DCE1D0690370036E407 /* TenVc.m */,
+				77716DCF1D0690370036E407 /* TenVc.xib */,
+			);
+			path = "Block传值";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		77716D771D068D7B0036E407 /* Passed-By-Value */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 77716D8F1D068D7B0036E407 /* Build configuration list for PBXNativeTarget "Passed-By-Value" */;
+			buildPhases = (
+				77716D741D068D7B0036E407 /* Sources */,
+				77716D751D068D7B0036E407 /* Frameworks */,
+				77716D761D068D7B0036E407 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Passed-By-Value";
+			productName = "Passed-By-Value";
+			productReference = 77716D781D068D7B0036E407 /* Passed-By-Value.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		77716D701D068D7B0036E407 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = zhangbin;
+				TargetAttributes = {
+					77716D771D068D7B0036E407 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+				};
+			};
+			buildConfigurationList = 77716D731D068D7B0036E407 /* Build configuration list for PBXProject "Passed-By-Value" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 77716D6F1D068D7B0036E407;
+			productRefGroup = 77716D791D068D7B0036E407 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				77716D771D068D7B0036E407 /* Passed-By-Value */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		77716D761D068D7B0036E407 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77716DC21D068FFA0036E407 /* SevenVc.xib in Resources */,
+				77716D8B1D068D7B0036E407 /* LaunchScreen.storyboard in Resources */,
+				77716DCC1D0690230036E407 /* NineVc.xib in Resources */,
+				77716DDB1D0690600036E407 /* Twelve.xib in Resources */,
+				77716DD61D06904B0036E407 /* ElevenVc.xib in Resources */,
+				77716DD11D0690370036E407 /* TenVc.xib in Resources */,
+				77716DC71D0690120036E407 /* EightVc.xib in Resources */,
+				77716DA91D068F900036E407 /* TwoVc.xib in Resources */,
+				77716DA41D068F750036E407 /* OneVc.xib in Resources */,
+				77716D881D068D7B0036E407 /* Assets.xcassets in Resources */,
+				77716DB31D068FB90036E407 /* FourVc.xib in Resources */,
+				77716D861D068D7B0036E407 /* Main.storyboard in Resources */,
+				77716DB81D068FC90036E407 /* FiveVc.xib in Resources */,
+				77716DAE1D068FA00036E407 /* ThreeVc.xib in Resources */,
+				77716DBD1D068FD80036E407 /* SixVc.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		77716D741D068D7B0036E407 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77716DB71D068FC90036E407 /* FiveVc.m in Sources */,
+				77716DA31D068F750036E407 /* OneVc.m in Sources */,
+				77716DDA1D0690600036E407 /* Twelve.m in Sources */,
+				77716DC61D0690120036E407 /* EightVc.m in Sources */,
+				77716DA81D068F900036E407 /* TwoVc.m in Sources */,
+				77716DD51D06904B0036E407 /* ElevenVc.m in Sources */,
+				77716D801D068D7B0036E407 /* AppDelegate.m in Sources */,
+				77716D7D1D068D7B0036E407 /* main.m in Sources */,
+				77716DD01D0690370036E407 /* TenVc.m in Sources */,
+				77716DCB1D0690230036E407 /* NineVc.m in Sources */,
+				77716DB21D068FB90036E407 /* FourVc.m in Sources */,
+				77716DAD1D068FA00036E407 /* ThreeVc.m in Sources */,
+				77716DBC1D068FD80036E407 /* SixVc.m in Sources */,
+				77716DC11D068FFA0036E407 /* SevenVc.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		77716D841D068D7B0036E407 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				77716D851D068D7B0036E407 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		77716D891D068D7B0036E407 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				77716D8A1D068D7B0036E407 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		77716D8D1D068D7B0036E407 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		77716D8E1D068D7B0036E407 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		77716D901D068D7B0036E407 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Passed-By-Value/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "zhangbin.Passed-By-Value";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		77716D911D068D7B0036E407 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Passed-By-Value/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "zhangbin.Passed-By-Value";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		77716D731D068D7B0036E407 /* Build configuration list for PBXProject "Passed-By-Value" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77716D8D1D068D7B0036E407 /* Debug */,
+				77716D8E1D068D7B0036E407 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		77716D8F1D068D7B0036E407 /* Build configuration list for PBXNativeTarget "Passed-By-Value" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77716D901D068D7B0036E407 /* Debug */,
+				77716D911D068D7B0036E407 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 77716D701D068D7B0036E407 /* Project object */;
+}

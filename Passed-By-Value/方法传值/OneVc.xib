@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OneVc"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="FDS-eS-3eV">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zEy-Oa-nye">
+                    <rect key="frame" x="250" y="275" width="100" height="50"/>
+                    <color key="backgroundColor" red="1" green="0.81710425689999999" blue="0.43160489390000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="3EH-hR-8fs"/>
+                        <constraint firstAttribute="height" constant="50" id="3eT-BI-wzh"/>
+                    </constraints>
+                    <state key="normal" title="传值"/>
+                </button>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Confidence" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="f4O-qU-LVr">
+                    <rect key="frame" x="20" y="205" width="560" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="toX-c9-lFE"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="点击传值，会将Confidence传递给initWithValue:方法" borderStyle="roundedRect" textAlignment="center" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="eAr-94-9iC">
+                    <rect key="frame" x="20" y="100" width="560" height="85"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+            </subviews>
+            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="eAr-94-9iC" secondAttribute="trailing" constant="20" id="CvP-Lp-r4n"/>
+                <constraint firstItem="eAr-94-9iC" firstAttribute="top" secondItem="FDS-eS-3eV" secondAttribute="top" constant="100" id="Gf2-z3-TPZ"/>
+                <constraint firstItem="zEy-Oa-nye" firstAttribute="centerX" secondItem="FDS-eS-3eV" secondAttribute="centerX" id="GfM-sW-lfm"/>
+                <constraint firstItem="zEy-Oa-nye" firstAttribute="top" secondItem="f4O-qU-LVr" secondAttribute="bottom" constant="20" id="Rek-OX-yrS"/>
+                <constraint firstAttribute="trailing" secondItem="f4O-qU-LVr" secondAttribute="trailing" constant="20" id="bSl-cl-i6l"/>
+                <constraint firstItem="zEy-Oa-nye" firstAttribute="centerY" secondItem="FDS-eS-3eV" secondAttribute="centerY" id="f6U-Nn-1i1"/>
+                <constraint firstItem="f4O-qU-LVr" firstAttribute="top" secondItem="eAr-94-9iC" secondAttribute="bottom" constant="20" id="q1L-Zt-7wf"/>
+                <constraint firstItem="eAr-94-9iC" firstAttribute="leading" secondItem="FDS-eS-3eV" secondAttribute="leading" constant="20" id="vps-Yt-jaZ"/>
+                <constraint firstItem="f4O-qU-LVr" firstAttribute="leading" secondItem="FDS-eS-3eV" secondAttribute="leading" constant="20" id="yPX-Bs-XCM"/>
+            </constraints>
+        </view>
+    </objects>
+</document>
