@@ -7,8 +7,10 @@
 //
 
 #import "FiveVc.h"
+#import "SixVc.h"
 
-@interface FiveVc ()
+@interface FiveVc ()<SixVcDelegate>
+@property (weak, nonatomic) IBOutlet UILabel *GetValue;
 
 @end
 
@@ -16,22 +18,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+
 }
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (IBAction)Jump:(id)sender {
+    SixVc *six = [[SixVc alloc] init];
+    six.delegate = self;
+    [self.navigationController pushViewController:six animated:YES];
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+// 实现代理方法
+-(void)PassValue:(NSString *)passValue{
+    self.GetValue.text = passValue;
 }
-*/
-
 @end

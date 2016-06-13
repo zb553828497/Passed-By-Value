@@ -5,9 +5,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Twelve">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TwelveVc">
             <connections>
-                <outlet property="view" destination="oGe-cX-deU" id="sU8-Wf-01B"/>
+                <outlet property="GetValue" destination="Ixe-1B-skr" id="gqs-0E-Pyl"/>
+                <outlet property="view" destination="oGe-cX-deU" id="yhB-9O-H1T"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -23,6 +24,9 @@
                         <constraint firstAttribute="height" constant="50" id="YNJ-7u-SBR"/>
                     </constraints>
                     <state key="normal" title="返回"/>
+                    <connections>
+                        <action selector="ReturnBtn:" destination="-1" eventType="touchUpInside" id="6OZ-nY-h5d"/>
+                    </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ixe-1B-skr">
                     <rect key="frame" x="20" y="205" width="560" height="50"/>
@@ -40,7 +44,7 @@
                     <textInputTraits key="textInputTraits"/>
                 </textField>
             </subviews>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <color key="backgroundColor" red="1" green="0.67595721601266234" blue="0.78184121591135969" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="Alu-u4-IKv" secondAttribute="trailing" constant="20" id="1dr-C9-tvt"/>
                 <constraint firstItem="Alu-u4-IKv" firstAttribute="centerX" secondItem="Ixe-1B-skr" secondAttribute="centerX" id="35o-uE-nqx"/>

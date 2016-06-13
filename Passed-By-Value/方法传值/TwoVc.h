@@ -10,4 +10,6 @@
 
 @interface TwoVc : UIViewController
 
+@property(nonatomic,retain)NSString *SaveValue;
+-(instancetype)initWithPassValueByMethod:(NSString *)value;
 @end

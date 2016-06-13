@@ -9,29 +9,29 @@
 #import "TenVc.h"
 
 @interface TenVc ()
-
+@property (weak, nonatomic) IBOutlet UITextField *Value;
+@property(nonatomic,copy)DoneBlock myBlock;
 @end
 
 @implementation TenVc
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
+-(instancetype)initWithBlock:(DoneBlock )block{
+    self = [super init];
+    if (self) {
+        self.myBlock = block;
+    }
+    return self;
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
 }
-*/
+- (IBAction)PassValue:(id)sender {
+    NSArray *array = [NSArray arrayWithObjects:[UIColor redColor],[UIColor purpleColor],[UIColor cyanColor],[UIColor blueColor],nil];
+    self.myBlock([array objectAtIndex:rand()%4],self.Value.text);
+    [self.navigationController popViewControllerAnimated:YES];
+}
+      
 
 @end

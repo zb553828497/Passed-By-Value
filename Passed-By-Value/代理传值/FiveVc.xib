@@ -5,7 +5,12 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FiveVc"/>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FiveVc">
+            <connections>
+                <outlet property="GetValue" destination="qyo-6K-GiZ" id="Urv-M2-Vw0"/>
+                <outlet property="view" destination="bRX-6m-yAk" id="UrY-5O-LL1"/>
+            </connections>
+        </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="bRX-6m-yAk">
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
@@ -20,6 +25,9 @@
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <state key="normal" title="点击"/>
+                    <connections>
+                        <action selector="Jump:" destination="-1" eventType="touchUpInside" id="bEX-s9-TqK"/>
+                    </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="一会我将会被替换为SixViewController中的值" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qyo-6K-GiZ">
                     <rect key="frame" x="20" y="205" width="560" height="50"/>

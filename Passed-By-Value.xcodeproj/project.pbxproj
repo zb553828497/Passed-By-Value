@@ -34,8 +34,9 @@
 		77716DD11D0690370036E407 /* TenVc.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77716DCF1D0690370036E407 /* TenVc.xib */; };
 		77716DD51D06904B0036E407 /* ElevenVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 77716DD31D06904B0036E407 /* ElevenVc.m */; };
 		77716DD61D06904B0036E407 /* ElevenVc.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77716DD41D06904B0036E407 /* ElevenVc.xib */; };
-		77716DDA1D0690600036E407 /* Twelve.m in Sources */ = {isa = PBXBuildFile; fileRef = 77716DD81D0690600036E407 /* Twelve.m */; };
-		77716DDB1D0690600036E407 /* Twelve.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77716DD91D0690600036E407 /* Twelve.xib */; };
+		77716DDB1D0690600036E407 /* TwelveVc.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77716DD91D0690600036E407 /* TwelveVc.xib */; };
+		77716DDE1D06BA7E0036E407 /* Singleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 77716DDD1D06BA7E0036E407 /* Singleton.m */; };
+		77716DE11D06BBFF0036E407 /* TwelveVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 77716DE01D06BBFF0036E407 /* TwelveVc.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -80,9 +81,11 @@
 		77716DD21D06904B0036E407 /* ElevenVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ElevenVc.h; sourceTree = "<group>"; };
 		77716DD31D06904B0036E407 /* ElevenVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ElevenVc.m; sourceTree = "<group>"; };
 		77716DD41D06904B0036E407 /* ElevenVc.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ElevenVc.xib; sourceTree = "<group>"; };
-		77716DD71D0690600036E407 /* Twelve.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Twelve.h; sourceTree = "<group>"; };
-		77716DD81D0690600036E407 /* Twelve.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Twelve.m; sourceTree = "<group>"; };
-		77716DD91D0690600036E407 /* Twelve.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Twelve.xib; sourceTree = "<group>"; };
+		77716DD91D0690600036E407 /* TwelveVc.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TwelveVc.xib; sourceTree = "<group>"; };
+		77716DDC1D06BA7E0036E407 /* Singleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Singleton.h; sourceTree = "<group>"; };
+		77716DDD1D06BA7E0036E407 /* Singleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Singleton.m; sourceTree = "<group>"; };
+		77716DDF1D06BBFF0036E407 /* TwelveVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwelveVc.h; sourceTree = "<group>"; };
+		77716DE01D06BBFF0036E407 /* TwelveVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwelveVc.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,9 +162,11 @@
 				77716DD21D06904B0036E407 /* ElevenVc.h */,
 				77716DD31D06904B0036E407 /* ElevenVc.m */,
 				77716DD41D06904B0036E407 /* ElevenVc.xib */,
-				77716DD71D0690600036E407 /* Twelve.h */,
-				77716DD81D0690600036E407 /* Twelve.m */,
-				77716DD91D0690600036E407 /* Twelve.xib */,
+				77716DDF1D06BBFF0036E407 /* TwelveVc.h */,
+				77716DE01D06BBFF0036E407 /* TwelveVc.m */,
+				77716DD91D0690600036E407 /* TwelveVc.xib */,
+				77716DDC1D06BA7E0036E407 /* Singleton.h */,
+				77716DDD1D06BA7E0036E407 /* Singleton.m */,
 			);
 			path = "单例传值";
 			sourceTree = "<group>";
@@ -278,7 +283,7 @@
 				77716DC21D068FFA0036E407 /* SevenVc.xib in Resources */,
 				77716D8B1D068D7B0036E407 /* LaunchScreen.storyboard in Resources */,
 				77716DCC1D0690230036E407 /* NineVc.xib in Resources */,
-				77716DDB1D0690600036E407 /* Twelve.xib in Resources */,
+				77716DDB1D0690600036E407 /* TwelveVc.xib in Resources */,
 				77716DD61D06904B0036E407 /* ElevenVc.xib in Resources */,
 				77716DD11D0690370036E407 /* TenVc.xib in Resources */,
 				77716DC71D0690120036E407 /* EightVc.xib in Resources */,
@@ -302,13 +307,14 @@
 			files = (
 				77716DB71D068FC90036E407 /* FiveVc.m in Sources */,
 				77716DA31D068F750036E407 /* OneVc.m in Sources */,
-				77716DDA1D0690600036E407 /* Twelve.m in Sources */,
 				77716DC61D0690120036E407 /* EightVc.m in Sources */,
+				77716DE11D06BBFF0036E407 /* TwelveVc.m in Sources */,
 				77716DA81D068F900036E407 /* TwoVc.m in Sources */,
 				77716DD51D06904B0036E407 /* ElevenVc.m in Sources */,
 				77716D801D068D7B0036E407 /* AppDelegate.m in Sources */,
 				77716D7D1D068D7B0036E407 /* main.m in Sources */,
 				77716DD01D0690370036E407 /* TenVc.m in Sources */,
+				77716DDE1D06BA7E0036E407 /* Singleton.m in Sources */,
 				77716DCB1D0690230036E407 /* NineVc.m in Sources */,
 				77716DB21D068FB90036E407 /* FourVc.m in Sources */,
 				77716DAD1D068FA00036E407 /* ThreeVc.m in Sources */,
@@ -464,6 +470,7 @@
 				77716D911D068D7B0036E407 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

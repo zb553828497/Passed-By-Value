@@ -5,7 +5,12 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SevenVc"/>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SevenVc">
+            <connections>
+                <outlet property="GetValue" destination="10T-OR-0Xc" id="J7t-gZ-MR4"/>
+                <outlet property="view" destination="moX-ab-Bua" id="5QG-sD-YVK"/>
+            </connections>
+        </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="moX-ab-Bua">
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
@@ -20,6 +25,9 @@
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <state key="normal" title="点击"/>
+                    <connections>
+                        <action selector="Jump:" destination="-1" eventType="touchUpInside" id="qNP-oW-tKq"/>
+                    </connections>
                 </button>
                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="一会我将会被替换为通知中的值" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="10T-OR-0Xc">
                     <rect key="frame" x="20" y="205" width="560" height="50"/>
@@ -27,11 +35,20 @@
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="一会我所在的控制器的白色背景将会被替换" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="itT-og-za4">
+                    <rect key="frame" x="20" y="109" width="560" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
             </subviews>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
+                <constraint firstItem="itT-og-za4" firstAttribute="top" secondItem="moX-ab-Bua" secondAttribute="top" constant="109" id="5mE-7K-Xq4"/>
                 <constraint firstItem="6ee-Md-vTE" firstAttribute="centerX" secondItem="moX-ab-Bua" secondAttribute="centerX" id="7HD-yw-GN6"/>
                 <constraint firstAttribute="trailing" secondItem="10T-OR-0Xc" secondAttribute="trailing" constant="20" id="9i3-BR-5zz"/>
+                <constraint firstAttribute="trailing" secondItem="itT-og-za4" secondAttribute="trailing" constant="20" id="HIl-no-yZe"/>
+                <constraint firstItem="10T-OR-0Xc" firstAttribute="top" secondItem="itT-og-za4" secondAttribute="bottom" constant="66" id="SSk-eB-vM0"/>
+                <constraint firstItem="itT-og-za4" firstAttribute="leading" secondItem="moX-ab-Bua" secondAttribute="leading" constant="20" id="U4L-TP-nXB"/>
                 <constraint firstItem="6ee-Md-vTE" firstAttribute="top" secondItem="10T-OR-0Xc" secondAttribute="bottom" constant="20" id="ZWB-uo-h9U"/>
                 <constraint firstItem="6ee-Md-vTE" firstAttribute="centerY" secondItem="moX-ab-Bua" secondAttribute="centerY" id="eTe-40-FPs"/>
                 <constraint firstItem="10T-OR-0Xc" firstAttribute="top" secondItem="moX-ab-Bua" secondAttribute="top" constant="205" id="i1C-hw-rz7"/>

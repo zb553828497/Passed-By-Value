@@ -12,6 +12,7 @@
 #import "EightVc.h"
 
 @interface EightVc ()
+@property (weak, nonatomic) IBOutlet UITextField *Value;
 
 @end
 
@@ -19,22 +20,21 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    NSArray *array = [NSArray arrayWithObjects:[UIColor redColor],[UIColor purpleColor],[UIColor cyanColor],[UIColor blueColor],nil];
+    // 随机从4个颜色中取出一个作为color的value
+    NSDictionary *dict  = @{@"color":[array objectAtIndex:rand()%4],
+                            @"text":self.Value.text
+                            };
+    
+// 注册通知中心
+    NSNotificationCenter *center = [NSNotificationCenter defaultCenter];
+// 发送通知   userInfo参数必须为字典类型
+    [center postNotificationName:@"PassValueNotification" object:@"zhangbin" userInfo:dict];
+
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (IBAction)PassValue:(id)sender {
+    [self.navigationController popViewControllerAnimated:YES];
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

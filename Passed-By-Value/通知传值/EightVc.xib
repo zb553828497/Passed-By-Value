@@ -5,7 +5,12 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EightVc"/>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EightVc">
+            <connections>
+                <outlet property="Value" destination="LuQ-1u-I3B" id="Yrd-kS-x8Z"/>
+                <outlet property="view" destination="hTu-es-tAl" id="c9H-oj-slx"/>
+            </connections>
+        </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="hTu-es-tAl">
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
@@ -19,6 +24,9 @@
                         <constraint firstAttribute="height" constant="50" id="rAb-GE-hlt"/>
                     </constraints>
                     <state key="normal" title="传值"/>
+                    <connections>
+                        <action selector="PassValue:" destination="-1" eventType="touchUpInside" id="vcp-ny-aYa"/>
+                    </connections>
                 </button>
                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Confidence" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LuQ-1u-I3B">
                     <rect key="frame" x="20" y="205" width="560" height="50"/>
@@ -32,7 +40,7 @@
                     <textInputTraits key="textInputTraits"/>
                 </textField>
             </subviews>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
                 <constraint firstItem="LuQ-1u-I3B" firstAttribute="leading" secondItem="hTu-es-tAl" secondAttribute="leading" constant="20" id="0Zw-nx-3Vd"/>
                 <constraint firstItem="LuQ-1u-I3B" firstAttribute="top" secondItem="hTu-es-tAl" secondAttribute="top" constant="205" id="Bwa-W1-BUP"/>

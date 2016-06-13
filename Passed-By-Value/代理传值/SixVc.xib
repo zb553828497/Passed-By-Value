@@ -5,7 +5,12 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SixVc"/>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SixVc">
+            <connections>
+                <outlet property="Value" destination="kJy-fv-3yk" id="6Qr-2L-nTs"/>
+                <outlet property="view" destination="2RC-fA-YPp" id="dOD-qI-coO"/>
+            </connections>
+        </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="2RC-fA-YPp">
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
@@ -33,6 +38,9 @@
                         <constraint firstAttribute="width" constant="100" id="7Zs-g7-hn7"/>
                     </constraints>
                     <state key="normal" title="传值"/>
+                    <connections>
+                        <action selector="PassValueBtn:" destination="-1" eventType="touchUpInside" id="p9f-ec-iS4"/>
+                    </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>

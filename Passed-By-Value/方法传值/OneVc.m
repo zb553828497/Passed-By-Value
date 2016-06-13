@@ -7,8 +7,10 @@
 //
 
 #import "OneVc.h"
+#import "TwoVc.h"
 
 @interface OneVc ()
+@property (weak, nonatomic) IBOutlet UITextField *Value;
 
 @end
 
@@ -16,22 +18,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (IBAction)PassValueBtn:(id)sender {
+    NSString *PassValue = self.Value.text;
+    TwoVc  *two  = [[TwoVc alloc] initWithPassValueByMethod:PassValue];
+    [self.navigationController pushViewController:two animated:YES];
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

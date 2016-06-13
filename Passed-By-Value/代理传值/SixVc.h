@@ -8,6 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol SixVcDelegate <NSObject>
+
+-(void)PassValue:(NSString *)passValue;
+
+@end
+
 @interface SixVc : UIViewController
+@property(nonatomic,unsafe_unretained)id<SixVcDelegate> delegate;
 
 @end

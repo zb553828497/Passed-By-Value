@@ -5,7 +5,12 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ThreeVc"/>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ThreeVc">
+            <connections>
+                <outlet property="Value" destination="hXA-MW-SnK" id="HSd-EM-a0k"/>
+                <outlet property="view" destination="JIc-GY-Rb8" id="5vF-lt-l8H"/>
+            </connections>
+        </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="JIc-GY-Rb8">
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
@@ -19,6 +24,9 @@
                         <constraint firstAttribute="height" constant="50" id="wix-cG-I8U"/>
                     </constraints>
                     <state key="normal" title="传值"/>
+                    <connections>
+                        <action selector="PassValueBtn:" destination="-1" eventType="touchUpInside" id="AV8-RM-qeU"/>
+                    </connections>
                 </button>
                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Confidence" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hXA-MW-SnK">
                     <rect key="frame" x="20" y="205" width="560" height="50"/>
@@ -28,13 +36,13 @@
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
-                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="点击传值，会将Confidence传递给firstValue方法" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HDF-L2-CSL">
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="点击传值，会将Confidence传递给saveValue属性" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HDF-L2-CSL">
                     <rect key="frame" x="20" y="100" width="560" height="85"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
             </subviews>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <color key="backgroundColor" red="0.0" green="1" blue="0.21077838556486173" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
                 <constraint firstItem="HDF-L2-CSL" firstAttribute="leading" secondItem="JIc-GY-Rb8" secondAttribute="leading" constant="20" id="10x-wB-3hh"/>
                 <constraint firstItem="Gge-pb-fc8" firstAttribute="centerX" secondItem="JIc-GY-Rb8" secondAttribute="centerX" id="2xI-tn-VeA"/>

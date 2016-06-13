@@ -9,6 +9,7 @@
 #import "SixVc.h"
 
 @interface SixVc ()
+@property (weak, nonatomic) IBOutlet UITextField *Value;
 
 @end
 
@@ -16,22 +17,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (IBAction)PassValueBtn:(id)sender {
+    if([self.delegate respondsToSelector:@selector(PassValue:)]){
+    [self.delegate PassValue:self.Value.text];
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+[self.navigationController popViewControllerAnimated:YES];
 }
-*/
-
 @end

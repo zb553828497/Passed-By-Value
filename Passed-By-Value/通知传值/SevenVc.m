@@ -7,8 +7,10 @@
 //
 
 #import "SevenVc.h"
+#import "EightVc.h"
 
 @interface SevenVc ()
+@property (weak, nonatomic) IBOutlet UITextField *GetValue;
 
 @end
 
@@ -16,22 +18,19 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    NSNotificationCenter *center = [NSNotificationCenter defaultCenter];
+    [center addObserver:self selector:@selector(ReceiveNotification:) name:@"PassValueNotification" object:nil];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (IBAction)Jump:(id)sender {
+    EightVc *eight = [[EightVc alloc] init];
+    [self.navigationController pushViewController:eight animated:YES];
+   }
+-(void)ReceiveNotification:(NSNotification *)notification{
+    // 从userInfo字典中取出color对应的value
+    self.view.backgroundColor = [notification.userInfo valueForKey:@"color"];
+    //  从userInfo字典中取出text对应的value
+    self.GetValue.text = [notification.userInfo valueForKey:@"text"];
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

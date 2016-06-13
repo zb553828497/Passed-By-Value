@@ -5,7 +5,12 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FourVc"/>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FourVc">
+            <connections>
+                <outlet property="GetValue" destination="UaF-cf-Yj1" id="Ukp-jK-rcg"/>
+                <outlet property="view" destination="P46-Ez-nda" id="Kci-gV-I93"/>
+            </connections>
+        </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="P46-Ez-nda">
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
@@ -20,6 +25,9 @@
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <state key="normal" title="返回"/>
+                    <connections>
+                        <action selector="ReturnBtn:" destination="-1" eventType="touchUpInside" id="ugh-LE-uUK"/>
+                    </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UaF-cf-Yj1">
                     <rect key="frame" x="20" y="205" width="560" height="50"/>
@@ -32,7 +40,7 @@
                     <nil key="highlightedColor"/>
                 </label>
             </subviews>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <color key="backgroundColor" red="0.0" green="1" blue="0.058934116405124026" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="UaF-cf-Yj1" secondAttribute="trailing" constant="20" id="U2i-qv-YeZ"/>
                 <constraint firstItem="jG0-B9-UcX" firstAttribute="top" secondItem="UaF-cf-Yj1" secondAttribute="bottom" constant="20" id="XwL-Pq-KS2"/>

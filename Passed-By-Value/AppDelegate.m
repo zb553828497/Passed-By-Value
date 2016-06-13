@@ -8,17 +8,12 @@
 
 #import "AppDelegate.h"
 #import "OneVc.h"
-#import "TwoVc.h"
 #import "ThreeVc.h"
-#import "FourVc.h"
 #import "FiveVc.h"
-#import "SixVc.h"
 #import "SevenVc.h"
-#import "EightVc.h"
 #import "NineVc.h"
-#import "TenVc.h"
 #import "ElevenVc.h"
-#import "Twelve.h"
+
 
 @interface AppDelegate ()
 
@@ -43,9 +38,9 @@
     // 单例传值
     ElevenVc *eleven = [[ElevenVc alloc]init];
     
-    UINavigationController *Nav = [[UINavigationController alloc]initWithRootViewController:one];
+    UINavigationController *Nav = [[UINavigationController alloc]initWithRootViewController:eleven];
     self.window.rootViewController = Nav;
-    [self.window makeKeyWindow];
+    [self.window makeKeyAndVisible];
     return YES;
 }
 

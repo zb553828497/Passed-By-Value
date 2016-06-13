@@ -9,5 +9,7 @@
 #import <Foundation/Foundation.h>
 
 @interface Singleton : NSObject
+@property(nonatomic,strong)NSString *value;
 
++(Singleton *)shareData;
 @end
