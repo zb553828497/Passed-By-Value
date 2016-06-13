@@ -38,7 +38,7 @@
     // 单例传值
     ElevenVc *eleven = [[ElevenVc alloc]init];
     
-    UINavigationController *Nav = [[UINavigationController alloc]initWithRootViewController:eleven];
+    UINavigationController *Nav = [[UINavigationController alloc]initWithRootViewController:nine];
     self.window.rootViewController = Nav;
     [self.window makeKeyAndVisible];
     return YES;
